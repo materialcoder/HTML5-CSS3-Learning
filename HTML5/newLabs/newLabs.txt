@@ -1,0 +1,23 @@
+结构标签：10个
+header nav section article aside hgroup dialog figure figcaption footer
+
+多媒体标签 三类
+<video> 标记定义一个视频
+<audio> 标记定义音频内容  它的样式不能直接用CSS来控制，<audio></audio>之间的文字只有在浏览器不兼容该属性时才会显示出来
+<source> 标记定义媒体资源、格式
+
+<canvas> 标记定义图片
+<embed> 标记定义外部的可交互的内容或插件，比如flash
+
+状态标签
+<meter> 状态标签（实时状态显示：气压、气温） Chrome/Opera
+<progress>  状态标签（任务过程：安装、加载） Chrome/Firefox/Opera
+
+列表标签
+<datalist>  为input标记定义一个下拉列表，配合option
+<details>  标记定义一个元素的详细内容，配合summary
+
+Menu
+<menu>  命令列表（目前所有主流浏览器都不支持）
+<menuitem> menu命令列表标签（只有Firefox8+支持）
+<command> menu标记定义一个命令按钮（只有IE9支持）
