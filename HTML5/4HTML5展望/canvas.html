@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+		canvas {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: block;
+			margin: auto;
+			background: #abcdef;
+		}
+	</style>
+	<script>
+		window.onload = function() {
+			var canvas = document.getElementById("canvas");
+			var context = canvas.getContext('2d');
+			context.moveTo(100,100);
+			context.lineTo(200,200);
+			context.stroke();
+		}
+	</script>
+</head>
+<body>
+<canvas id="canvas" width="1024" height="768">你的牛车已经拉不动canvas这样高级的物品了，还是换一台法拉利吧，推荐使用Chrome浏览器！</canvas>
+</body>
+</html>

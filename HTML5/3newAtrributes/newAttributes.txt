@@ -1,0 +1,48 @@
+input 
+email/url/number/range/Date pickers(Date/Month/Week/Time/Datetime/Datetime-local)/search/color/tel   (email/url/tel在手机端效果较明显,在PC无显示效果)
+
+
+表单属性
+autocomplete/autofocus/multiple/placeholder/required
+
+auotcomplete适用于<form> 标签，以及以下类型的<input>标签：
+text/search/url/tel/email/password/datepickers/range/color
+
+autofocus属性适用于所有的input标签：<input autofocus="autofocus">
+
+multiple 规定输入域中可选择多个值 适用于以下类型的<input>标签：email和file(chrome下email不支持)
+<input type="file" multiple="multiple" />
+
+placeholder属性适用于<input>标签type属性值为：text,search,url,telephone,email,password
+
+
+链接属性
+<link>的sizes属性/<base>的target属性/超链接<a>
+<link rel="icon" href="icon.gif" type="image/gif" sizes="16x16">
+<base href="http://localhost/" target="_blank"> <base>标签写在<head></head>之间，；让所有的超链接都跳转到新的页面
+a: media="" (表示对设备进行优化，handhelp对“手持”设备进行支持，tv对“电视”设备进行支持)
+a: hreflang="zh" (设备语言，)
+a: rel="external" (设置超链接的应用，这里超链接为外部链接)。
+
+
+其他属性
+script/ol/html/style
+script标签
+defer:加载完脚本后脚本后并不执行，而是等整个页面加载完之后再执行
+<script defer src="URL"></script>
+async:加载完脚本后立刻执行，不用等整个页面都加载完，属于异步执行（兼容主流浏览器）
+<script async src="URL"></script>
+
+ol有序列表
+start——起始值
+reversed——倒叙排列
+
+html
+manifest="cache.manifest"(定义页面离线应用文件)
+<html manifest="cache.manifest">
+
+*style
+scoped:内嵌CSS  (可以写在任何为止，里面写CSS)
+<style scoped>
+ ....
+</style>
