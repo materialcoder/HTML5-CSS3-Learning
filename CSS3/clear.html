@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用after清除浮动</title>
+	<style>
+		header {
+			background: #abcdef;
+		}
+		header > article {
+			float: left;
+			width: 40%;
+			height: 30px;
+			background: #f00;
+		}
+		header > aside {
+			float: right;
+			width: 40%;
+			height: 50px;
+			background: #ff0;
+		}
+		/*header高度塌陷，此时需要清除浮动*/
+		header::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<article></article>
+		<aside></aside>
+	</header>
+</body>
+</html>

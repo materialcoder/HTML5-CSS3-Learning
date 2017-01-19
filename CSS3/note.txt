@@ -59,3 +59,5 @@ element[attribute|="value"] 设置attribute属性值为"value"或以"value-"开�
 element::first-line  对element元素的第一行文本进行格式化，只能用于块级元素
 element::first-letter 向文本的首字母设置特殊样式，只能用于块级元素
 element::before  在元素的内容前面插入新内容，常与“content”配合使用.它是第一个子元素；行级元素；内容通过content写入
+element::after  在元素的内容后面插入新内容，常与“content”配合使用。多用于清除浮动
+element::selection  用于设置在浏览器中选中文本后的背景色与前景色
