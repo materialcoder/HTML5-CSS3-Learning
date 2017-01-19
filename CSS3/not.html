@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>not</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+		nav {
+			width: 506px;
+			margin: 0 auto;
+		}
+		a {
+			text-decoration: none;
+			color: #333;
+			font-size: 14px;
+			display: block;
+			float: left;
+			width: 100px;
+			height: 30px;
+		}
+		nav > a:not(:last-of-type) {
+			border-right: 1px solid #f00;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+	</nav>
+</body>
+</html>

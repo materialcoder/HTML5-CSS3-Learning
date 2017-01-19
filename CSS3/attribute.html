@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Attribute</title>
+	<style>
+		a[href] {
+			text-decoration: none;
+		}
+		a[href="#"] {
+			color: #f00;
+		}
+		/*a[href~="#"] {
+			color: #f00;
+		}*/ /*无效*/
+		a[class~="two"] {
+			color: #ff0;
+		}
+		a[href^="#"] {
+			color: #0f0;
+		}
+		a[href$="#"] {
+			color: #00f;
+		}
+		a[href*="#"] {
+			color: #0ff;
+		}
+		a[href|="#"] {
+			color: #f0f;
+		}
+	</style>
+</head>
+<body>
+<a href="attribute.html">Attribute</a>
+<a href="#">Attribute</a>
+<a class="two three" href="#">Attribute</a>
+<a class="one two" href="#">Attribute</a>
+<a href="#1">Attribute</a>
+<a href="#2">Attribute</a>
+<a href="#3">Attribute</a>
+<a href="#4">Attribute</a>
+<a href="1#">Attribute</a>
+<a href="2#">Attribute</a>
+<a href="3#">Attribute</a>
+<a href="4#">Attribute</a>
+<a href="1#1">Attribute</a>
+<a href="2#2">Attribute</a>
+<a href="3#3">Attribute</a>
+<a href="4#4">Attribute</a>
+<a href="#-1">Attribute</a>
+<a href="#-2">Attribute</a>
+<a href="#-3">Attribute</a>
+<a href="#-4">Attribute</a>
+</body>
+</html>
