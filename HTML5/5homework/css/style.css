@@ -47,8 +47,8 @@ header > .container > nav > a:hover { color: #f46208; }
 .contact { clear: both; }
 .contact input { width: 400px; height: 30px; padding: 4px; border: 1px solid #ccc; }
 .contact input:first-of-type { margin-right: 40px; }
-.contact input:last-of-type { width: 854px; height: 300px; margin: 16px 0; }
+/*.contact input:last-of-type { width: 854px; height: 300px; margin: 16px 0; }*/
 .contact button { font-size: 24px; margin-bottom: 40px; padding: 8px; cursor: pointer; color: #fff; border-radius: 2px; background: #f46208; }
-
+.contact textarea { width: 854px; height: 300px; margin: 16px 0; border: 1px solid #ccc; padding: 4px; }
 /* footer */
 footer { font-size: 24px; line-height: 100px; height: 100px; text-align: center; color: #fff; background: #2e2e2e; }
