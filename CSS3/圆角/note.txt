@@ -1,6 +1,6 @@
 box-shaodw: h-shadow v-shadow blur spread color inset;
 box-shadow: 水平偏移 竖直偏移 模糊量 扩展量 颜色 内阴影还是外阴影;
 
- 边界图片：border-image
- border-image: source slice width outset repeat;
- border-image-slice:指定图像的边界向内偏移
+边界图片：border-image
+border-image: source slice width outset repeat;
+border-image-slice:指定图像的边界向内偏移,可以是数字、百分比或fill

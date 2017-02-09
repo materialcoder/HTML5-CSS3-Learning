@@ -1,0 +1,12 @@
+backgroud-clip 指定背景绘制区域
+backgroud-clip: border-box|padding-box|content-box;
+
+background-origin设置元素背景图片的原始起始位置
+backgroud-origin: border-box|padding-box|content-box;
+
+background-size指定背景图片大小
+bakground-size:length|percentage|cover|contain
+
+多重背景图像：backgroung-image: url(1.jpg),url(2.jpg);(前面的图片会覆盖后面的图片)
+
+background:color position size repeat origin clip attachment image;
