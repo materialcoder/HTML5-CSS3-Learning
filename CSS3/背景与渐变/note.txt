@@ -1,0 +1,39 @@
+线性渐变
+background:linear-gradient(direction,color-stop1,color-stop2,...);
+-从上到下（默认）
+background:linear-gradient(color-stop1,color-stop2,...);
+-从左到右
+background:-webkit-linear-gradient(begin-direction,color-stop1,color-stop2,...);
+background:-moz-linear-gradient(end-direction,color-stop1,color-stop2,...);
+background:-o-linear-gradient(end-direction,color-stop1,color-stop2,...);
+background:linear-gradient(to end-direction,color-stop1,color-stop2,...);
+-对角线
+background:-webkit-linear-gradient(begin-horizontal begin-vertical,color-stop1,color-stop2,...);
+background:-moz-linear-gradient(end-horizontal end-vertical,color-stop1,color-stop2,...);
+background:-o-linear-gradient(end-horizontal end-vertical,color-stop1,color-stop2,...);
+background:linear-gradient(to end-horizontal end-vertical,color-stop1,color-stop2,...);
+-使用角度
+background:linear-gradient(angle,color-stop1,color-stop2,...);
+
+重复渐变
+background:repeating-linear-gradient(color1,color2,...);
+
+
+径向渐变-颜色结点均匀分布（默认）
+background:radial-gradient(center,shape size,start-color,...,last-color);
+-颜色结点不均匀分布
+background:radial-gradient(color1 length|percentage, color2 length|percentage,...);
+-设置形状
+background:radial-gradient(shape,start-color,...,last-color);
+circle-圆形
+ellipse-椭圆
+-重复渐变
+background: repeating-radial-gradient(color1 length|percentage, color2 length|percentage,...);
+
+
+IE浏览器渐变（IE6~8）
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='startColor',endColorstr='endColor',GradientType=0);
+startColor和endColor都必须是十六进制
+GradientType=0 从上到下
+GradientType=1 从左到右
+GradientType=2 从最后一个颜色开始渐变到最深的颜色

@@ -1,0 +1,27 @@
+transition
+
+transition-property -- 检索或设置对象中的参与过渡的属性
+transition-property：none|all|property;
+(property--某一个元素属性名称)(默认是all)
+
+transition-duration --过渡的持续时间
+transition-duration: time; (time是以秒或毫秒计)
+
+transition-timing-function --设置对象中过渡的动画类型
+transition-timing-function: ease (平滑过渡，从0增快然后再减慢)
+|linear (线性过渡，匀速)
+|ease-in (由慢到快)
+|ease-out (由快到慢)
+|ease-in-out (由慢到快再到慢)
+|step-start (等同于steps(1,start))
+|step-end (等同于steps(1,end))
+|steps(<integer>[,[start|end]]?) 接受两个参数的步进函数，第一个参数必须是正整数，指定函数；第二个参数取值为start或end，指定每一步的值发生变化的时间点，可选，默认为end
+|cubic-bezier(<number>,<number>,<number>,<number>); number值在0~4之间
+
+
+transition-delay --设置对象延迟过渡的时间
+transition-delay:time;
+
+
+transition简写
+transition:property duration timing-function delay;

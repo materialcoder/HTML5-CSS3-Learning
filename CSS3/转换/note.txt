@@ -1,0 +1,84 @@
+transform
+兼容性：IE12+、FireFox16+、Safari16+、Opera23+
+
+--2D转换-
+rotate() 旋转
+translate() 平移
+scale() 缩放
+skew() 扭曲或斜切
+matrix() 矩阵或混合
+
+transform:rotate(<angle>);
+
+
+translateX(x) 仅水平方向移动
+translateY(y) 仅垂直方向移动
+translate(x,y) 水平和垂直方向同时移动
+
+transform:translateX(<value>);
+transform:translateY(<value>);
+transform:translate(<value1>,[<value2>]);(第二个参数可以不写，默认为0)
+
+
+scaleX(x)
+scaleY(y)
+scale(x,y)
+
+
+skewX(x)
+skewY(y)
+skew(x,y)
+
+
+transform:matrix(a,b,c,d,tx,ty);
+tx,ty基于x，y坐标重新定位元素
+
+
+--3D转换
+rotate3d()
+tanslate3d()
+scale3d()
+matrix3d()
+
+transfrom:rotateX(angle);
+transfrom:rotateY(angle);
+transfrom:rotateZ(angle);
+transfrom:rotate3d(x,y,z,angle);
+
+移动translateZ
+translate3d
+transform:translate(x,y,z); (x,y,z都不可以省略)
+
+缩放scaleZ
+scale3d
+transform:scale3d(x,y,z); (x,y,z都不可以省略)
+
+transform:matrix3d(sx,n,n,n,n,sy,n,n,n,n,sz,n,n,n,n,1);
+
+
+transform-origin:x y z;
+
+matrix(1,0,0,1,sx,sy); --- translate(sx,sy);
+matrix(sx,0,0,sy,0,0); --- scale(sx,sy);
+matrix(cosθ,sinθ,-sinθ,cosθ,0,0); --- rotate(θdeg);
+matrix(1,tanθy,tanθx,1,0,0); --- skew(θxdeg,θydeg);
+
+矩阵matrix镜像对称效果
+matrix((1-k*k)/(1+k*K),2k/(1+k*k),2k/(1+k*k),(k*k-1)/(1+k*K),0,0);
+k是对称轴的斜率。
+
+
+CSS3扩展属性
+transfrom-style  指定嵌套元素是怎样在三维空间中呈现
+transform-style:flat|preserve-3d;
+
+perspective
+指定观察者与[z=0]平面的距离，使具有三维位置变换的元素产生透视效果
+perspective:number|none;
+
+perspective-origin 指定透视点的位置
+perspective-origin:x-axis y-axis;
+默认值：perspective-origin: 50% 50%;
+
+backface-visibility 指定元素背面面向用户时是否可见
+backface-visibility:visible|hidden;

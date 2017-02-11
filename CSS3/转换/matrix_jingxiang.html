@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>matrix 镜像</title>
+	<style>
+		div {
+			width: 1500px;
+			height: 250px;
+			background: #abcdef;
+			margin: 100px auto;
+		}
+		div:nth-child(1) > img {
+			transform: matrix(0,1,1,0,0,0);
+			transform: matrix(-0.6,0.8,0.8,0.6,0,0);
+		}
+	</style>
+</head>
+<body>
+	<div><img src="images/sprite.jpg" alt=""></div>
+	<div><img src="images/sprite.jpg" alt=""></div>
+</body>
+</html>

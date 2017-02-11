@@ -1,0 +1,23 @@
+/* All Tags */
+* { margin: 0; padding: 0; border: none; }
+
+/* 背景 */
+.main { width: 1200px; height: 600px; margin: auto; background: -webkit-linear-gradient(rgb(196, 228, 253),rgb(255,255,255),rgb(148, 190, 89)); background: -moz-linear-gradient(rgb(196, 228, 253),rgb(255,255,255),rgb(148, 190, 89)); background: -ms-linear-gradient(rgb(196, 228, 253),rgb(255,255,255),rgb(148, 190, 89)); background: -o-linear-gradient(rgb(196, 228, 253),rgb(255,255,255),rgb(148, 190, 89)); background: linear-gradient(rgb(196, 228, 253),rgb(255,255,255),rgb(148, 190, 89)); }
+
+/* 绘制云朵 */
+.main > .cloud { width: 100px; height: 100px; background: #fff; margin: 10px; border-radius: 50px; position: relative; }
+.main > .cloud::before,
+.main > .cloud::after,
+.main > .cloud > div:nth-child(1),
+.main > .cloud > div:nth-child(2) { width: 60px; height: 60px; background: #fff; border-radius: 50%; position: absolute; }
+.main > .cloud::before { display: block; content: ''; top: 35px; right: -15px; }
+.main > .cloud::after { display: block; content: ''; top: 20px; left: -40px; }
+.main > .cloud > div:nth-child(1) { top: 40px; left: -60px; }
+.main > .cloud > div:nth-child(2) { top: 45px; left: -20px; }
+
+/* 设置云朵大小和不同位置 */
+.main > .cloud1 { transform: translate(600px,50px) scale(.8); }
+.main > .cloud2 { transform: translate(720px,-30px) scale(.4); }
+.main > .cloud3 { transform: translate(400px,-230px) scale(.6); }
+.main > .cloud4 { transform: translate(480px,-220px) scale(.6); }
+.main > .cloud5 { transform: translate(900px,-420px) scale(.6); }

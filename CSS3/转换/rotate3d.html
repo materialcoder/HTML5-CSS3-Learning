@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rotate3d</title>
+	<style>
+		div {
+			width: 1500px;
+			height: 250px;
+			background: #abcdef;
+			margin: auto;
+		}
+		div > img {
+			transform: rotate3d(1,1,1,45deg);
+			transform: rotate3d(.1,1,1,45deg); /*在x方向旋转了4.5deg*/
+		}
+	</style>
+</head>
+<body>
+	<div><img src="images/sprite.jpg" alt=""></div>
+</body>
+</html>
