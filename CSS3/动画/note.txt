@@ -1,0 +1,78 @@
+animation
+兼容性：IE10+、FireFox16+、Chrome43+、Safari9+、Opera30+、Android(-webkit-)
+
+
+animation-name --检索或设置所应用的动画名称
+animation-name:keyframename | none;
+
+animation-duration -- 检索或设置对象动画的持续时间
+animation-duration: time;
+
+animation-timing-function -- 
+animation-timing-function: ease (平滑过渡，从0增快然后再减慢)
+|linear (线性过渡，匀速)
+|ease-in (由慢到快)
+|ease-out (由快到慢)
+|ease-in-out (由慢到快再到慢)
+|step-start (等同于steps(1,start))
+|step-end (等同于steps(1,end))
+|steps(<integer>[,[start|end]]?) 接受两个参数的步进函数，第一个参数必须是正整数，指定函数；第二个参数取值为start或end，指定每一步的值发生变化的时间点，可选，默认为end
+|cubic-bezier(<number>,<number>,<number>,<number>); number值在0~1之间
+
+animation-delay: time; (默认为0)
+
+animation-iteration-count -- 设置动画循环次数
+animation-iteration-count: infinite | <number>; (默认为1)
+
+animation-direction: normal | reverse | alternate | alternate-reverse | initial | inherit;
+normal -- 正常方向(默认)
+reverse -- 反方向运行
+alternate -- 动画先正常运行再反方向运行，并持续交替运行
+alternate-reverse -- 动画先反方向运行再正常运行，并持续交替运行
+
+
+animation-fill-mode -- 规定当动画不播放时(当动画完成或当动画有延迟未开始播放时)，要应用到元素的样式
+animation-fill-mode: none | forwards | backwords | both | initial | inherit;
+none--默认值；不设置对象动画之外的状态；
+forwards--设置对象状态为动画结束时的状态；
+backwords--设置对象状态为动画开始时的状态；
+both--设置对象状态为动画结束或开始时的状态。
+
+
+animation-play-state -- 指定动画是否正在运行或已暂停
+animation-play-state: paused | running;
+paused:指定动画暂停；
+running:默认值，指定正在运行的动画
+
+
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+(name,duration为必须项。有两个时间字段时，第一个默认为duration，第二个为delay)；
+
+
+@keyframes 关键帧
+@keyframes animationname {
+	keytrames-selector {
+		css-styles;
+	}
+}
+keytrames-selector: 动画持续时间的百分比，0-100%、from（0%）、to(100%).
+并不是所有的CSS样式都能实现过渡效果
+
+
+
+will-change -- 增强页面的渲染性能
+
+translateZ() (or translate3d) Hack 为元素添加没有变化的3D变形，骗取浏览器触发硬件加速
+代价——占用RAM和GPU存储空间
+
+will-change -- 提前通知浏览器元素将要做什么动画，让浏览器提前准备何时的优化设置（更多是用JavaScript来控制）
+兼容性：IE13+、Firefox47+、Chrome49+、Safari9.1+、Opera39+、IOS9.3+、Android52+
+
+will-change: auto | scroll-position | contents | <custom-ident> | <animateable-feature>;
+auto:无特定的意图，适用于它通常所做的任何启发式和优化
+scroll-position:表示将要改变元素的滚动位置
+contents:表示将要改变元素的内容
+***<custom-ident>:明确指定将要改变的属性与给定的名称。will-change:transform;
+<animateable-feature>:可动画的一些特征，如left、top、margin等。
+
+注意：勿滥用、提前申明、remove

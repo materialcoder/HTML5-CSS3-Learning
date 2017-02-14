@@ -16,7 +16,7 @@ transition-timing-function: ease (平滑过渡，从0增快然后再减慢)
 |step-start (等同于steps(1,start))
 |step-end (等同于steps(1,end))
 |steps(<integer>[,[start|end]]?) 接受两个参数的步进函数，第一个参数必须是正整数，指定函数；第二个参数取值为start或end，指定每一步的值发生变化的时间点，可选，默认为end
-|cubic-bezier(<number>,<number>,<number>,<number>); number值在0~4之间
+|cubic-bezier(<number>,<number>,<number>,<number>); number值在0~1之间
 
 
 transition-delay --设置对象延迟过渡的时间
