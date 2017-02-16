@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>比较操作符</title>
+</head>
+<body>
+	<script>
+		var a=10,
+			b=20;
+		var str = "hello ";
+		a+=5; //a=a+5
+		b%=4; //b=b%4,0
+		str+="world"; //str = str + "world";
+		console.log(a>b);
+
+		var x=10,
+			y="10",
+			m=15,
+			// z=x==y; //true
+			z=x===y, //false
+			n=y!=m, //true
+			n=x!=y, //false
+			n=x!==y; //true
+		console.log(n);
+		console.log(null==undefined); //true
+		console.log(null===undefined); //false
+
+
+		var score = 85;
+		var result=(score>=60)?"及格":"不及格";
+		console.log(result);
+	</script>
+</body>
+</html>

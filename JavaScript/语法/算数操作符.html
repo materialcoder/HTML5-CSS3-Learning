@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>算数操作符</title>
+</head>
+<body>
+	<script>
+		var num1 = 10,
+			num2 = 20;
+		console.log(num1+num2); //30
+		console.log(num1-num2);
+		console.log(num1/num2);
+		console.log(num1%num2);
+		console.log(num1*num2);
+
+		var num3 = 10,
+			num4 = "c";
+		console.log(num3+num4); //10c
+		console.log(num3/num4); //NaN
+		console.log(num3%num4); //NaN
+		console.log(num3*num4); //NaN
+
+		var num5 = 10,
+			num6 = "5";
+		console.log(num5+num6); //105
+		console.log(num5-num6); //5
+		console.log(num5/num6); //2
+		console.log(num5%num6); //0
+		console.log(num5*num6); //50
+
+		var num7 = 10,
+			num8 = 5,
+			num9 = ++num7+num8;
+		console.log(num7); //11
+		console.log(num9); //16
+
+		var num_1 = 10,
+			num_2 = 5,
+			num_3 = num_1++-num_2,
+			x1 = 20,
+			x2 = 30,
+			x3 = --x1+x2--;
+		console.log(num_1); //11
+		console.log(num_3); //5
+		console.log(x1); //19
+		console.log(x2); //29
+		console.log(x3); //19+30=49
+	</script>
+</body>
+</html>

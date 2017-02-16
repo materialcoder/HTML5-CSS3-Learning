@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>splice</title>
+</head>
+<body>
+	<script>
+		var arr=["a","b","c","d","e","f"];
+		//var delArr=arr.splice(2,2);
+		//var delArr=arr.splice(2);
+		/*var delArr=arr.splice(2,0);
+		console.log(arr);
+		console.log(delArr);*/
+
+		//插入
+		/*var insertArr=arr.splice(3,0,"m","n",88);
+		console.log(arr);
+		console.log(insertArr); //[]*/
+
+		//替换
+		var replaceArr=arr.splice(1,2,"x","y","z");
+		console.log(arr);
+		console.log(replaceArr);
+	</script>
+</body>
+</html>

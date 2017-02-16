@@ -1,0 +1,49 @@
+分支语句（if、switch）、循环语句(for、while)
+说明：for适合已知循环次数的循环体
+	  while适合未知循环次数的循环体
+
+if语句(超过三个判断，建议用switch)
+if(condition) {
+	statement1;
+}
+
+if(condition) {
+	statement1;
+} else {
+	statement2;
+}
+
+if(condition1) {
+	statement1;
+} else if(condition2) {
+	statement2;
+}...else {
+	statement..;
+}
+
+
+while(条件){
+	需要执行的脚本；
+}
+
+do{
+	需要执行的代码;
+}while(条件)
+说明：这种语法的循环至少要执行一次
+
+
+prompt() -- 弹出输入框
+返回值：1、点击确定，返回输入内容
+		2、点击取消，返回null
+用户在页面中输入的数字类型均为字符串
+
+string.length -- 返回字符串的长度
+
+new Date().getDay() -- 获取周期
+返回值：number(0~6)
+
+document.write("内容") --向浏览器输入内容
+
+
+break：立即退出循环
+continue：介绍本次循环，继续开始下一次

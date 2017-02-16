@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>布尔型</title>
+</head>
+<body>
+	<script>
+		//一次声明多个变量
+		var name_01 = "David", age = 18, email = "David@sina.com.cn", address,settings = null;
+		var distance = 12.67890;
+		var id = "16";
+
+		console.log(typeof(id)); //返回string
+		id = Number(id);
+		console.log(typeof(id)); //返回number
+
+		name_01 = Number(name_01);
+		console.log(name_01); //NaN
+
+		var topval = "28px";
+		console.log(topval-10); //NaN
+
+		var topval = parseInt("28px");
+		console.log(topval-10); //18
+
+		var c = "abc58";
+		console.log(parseInt(c)); //NaN,c必须是数字开头
+
+		console.log(parseInt("0xf"));
+		console.log(parseInt("0xf",16)); //15
+
+		var d = parseInt("12.34px");
+		console.log(d); //12
+
+		var e = parseFloat("12.34px");
+		console.log(e); //12.34
+
+		var f = parseFloat("12.34.56px");
+		console.log(f); //12.34
+
+		var g = parseInt("01234");
+		console.log(g); //1234
+
+		var h = parseFloat("01234");
+		console.log(h); //1234
+
+		var v = parseFloat("0.123abc");
+		console.log(v); //0.123
+
+		var ids = 6789;
+		var idstr = ids.toString();
+		console.log(typeof idstr);
+		console.log(typeof String(ids));
+
+
+		var x = 222;
+		console.log(Boolean(x)); //true
+		var strings = " ";
+		console.log(Boolean(strings)); //true
+		var strings = "";
+		console.log(Boolean(strings)); //false
+		var y;
+		console.log(Boolean(y)); //false
+		var timer = null;
+		console.log(Boolean(timer)); //false
+	</script>
+</body>
+</html>

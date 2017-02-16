@@ -1,0 +1,60 @@
+/* All Tags */
+* { margin: 0; padding: 0; border: none; }
+body { width: 100%;	height: 100%; overflow: hidden; }
+
+/* 背景 */
+.sky { height: 50vh;
+	background: -webkit-linear-gradient(rgb(196, 228, 253),rgb(255,255,255));
+	background:    -moz-linear-gradient(rgb(196, 228, 253),rgb(255,255,255));
+	background:     -ms-linear-gradient(rgb(196, 228, 253),rgb(255,255,255));
+	background:      -o-linear-gradient(rgb(196, 228, 253),rgb(255,255,255));
+	background:         linear-gradient(rgb(196, 228, 253),rgb(255,255,255));
+}
+.grass { height: 50vh; position: relative; 
+	background: -webkit-linear-gradient(rgb(255,255,255),rgb(148, 190, 89));
+	background:    -moz-linear-gradient(rgb(255,255,255),rgb(148, 190, 89));
+	background:     -ms-linear-gradient(rgb(255,255,255),rgb(148, 190, 89));
+	background:      -o-linear-gradient(rgb(255,255,255),rgb(148, 190, 89));
+	background:         linear-gradient(rgb(255,255,255),rgb(148, 190, 89));
+
+}
+.grass > img { width: 130px; height: 125px; position: absolute; right: 200px; bottom: 50px; }
+
+/* 绘制云朵 */
+.sky > .cloud { width: 100px; height: 100px; background: #fff; border-radius: 50px; position: relative; top: 20px; }
+.sky > .cloud::before,
+.sky > .cloud::after,
+.sky > .cloud > div:nth-child(1),
+.sky > .cloud > div:nth-child(2) { width: 60px; height: 60px; background: #fff; border-radius: 50%; position: absolute; }
+.sky > .cloud::before { display: block; content: ''; top: 35px; right: -15px; }
+.sky > .cloud::after { display: block; content: ''; top: 20px; left: -40px; }
+.sky > .cloud > div:nth-child(1) { top: 40px; left: -60px; }
+.sky > .cloud > div:nth-child(2) { top: 45px; left: -20px; }
+
+/* 设置云朵动画 */
+.sky > .cloud1 { opacity: .9; animation: move1 linear 10s infinite; }
+.sky > .cloud2 { opacity: .4; animation: move2 linear 14s infinite; }
+.sky > .cloud3 { opacity: .8; animation: move3 linear 8s infinite; }
+.sky > .cloud4 { opacity: .7; animation: move4 linear 10s infinite; }
+.sky > .cloud5 { opacity: .6; animation: move5 linear 12s infinite; }
+
+@keyframes move1 {
+	from {transform: translate(1800px,10px) scale(.8); }
+	to { transform: translate(-100px,10px) scale(.8); }
+}
+@keyframes move2 {
+	from {transform: translate(1900px,-30px) scale(.4); }
+	to { transform: translate(-100px,-30px) scale(.4); }
+}
+@keyframes move3 {
+	from {transform: translate(1600px,-220px) scale(.6); }
+	to { transform: translate(-100px,-220px) scale(.6); }
+}
+@keyframes move4 {
+	from {transform: translate(1400px,-230px) scale(.5); }
+	to { transform: translate(-100px,-230px) scale(.5); }
+}
+@keyframes move5 {
+	from {transform: translate(2000px,-420px) scale(.6); }
+	to { transform: translate(-100px,-420px) scale(.6); }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>join、reverse、sort</title>
+</head>
+<body>
+	<script>
+		var nums=[2,3,4];
+		var str=nums.join(); //2,3,4
+		var words=["border","left","color"];
+		var wordstr=words.join("-");
+		console.log(wordstr); //border-left-color
+
+		//reverse
+		nums.reverse();
+		console.log(nums);
+
+		var strs=["a","b","c","d"];
+		//返回dcba字符串
+		var newstr=strs.reverse().join("");
+		console.log(newstr);
+
+		var arr=[-2,7,13,-99,5,9,12,55];
+		//console.log(arr.sort()); //12,13,5,55,7,9 按字符串顺序排的
+		
+		//arr.sort(function(a,b) {return b-a}); //降序
+		arr.sort(function(a,b) {return a-b}); //升序
+		console.log(arr);
+	</script>
+</body>
+</html>

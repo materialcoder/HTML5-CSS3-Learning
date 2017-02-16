@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>charAt</title>
+</head>
+<body>
+	<script>
+		var str="hello world";
+		// console.log(str[1]);//IE7及更早的不支持
+		console.log(str.charAt(1)); //e
+		console.log(str.charAt(15)); //空
+		console.log(str.charCodeAt(4)); //111
+
+		var email="marry@163.com.cn";
+		console.log(email.indexOf("@")); //5
+		console.log(email.indexOf("z")); //-1
+		console.log(email.indexOf("rr")); //2
+		console.log(email.lastIndexOf(".")); //13
+	</script>
+</body>
+</html>

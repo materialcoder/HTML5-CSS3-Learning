@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数中的参数</title>
+</head>
+<body>
+	<script>
+		/*function inner(num1,num2) {
+			console.log(num2);
+		}
+		inner(10); //undefined*/
+
+		function inner() {
+			//arguments
+			console.log(arguments.length); //2
+			console.log(arguments[0]); //10
+		}
+		inner(10,5);
+
+		function add(num1,num2) {
+			arguments[0]=99;
+			console.log(num1); //99
+		}
+		add(55,88);
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>switch输出星期</title>
+</head>
+<body>
+	<script>
+		var week=new Date().getDay();
+		var weekstr=""
+		console.log(week);
+		switch(week){
+			case 0:
+				weekstr="日";
+			break;
+			case 1:
+				weekstr="一";
+			break;
+			case 2:
+				weekstr="二";
+			break;
+			case 3:
+				weekstr="三";
+			break;
+			case 4:
+				weekstr="四";
+			break;
+			case 5:
+				weekstr="五";
+			break;
+			// case 6:
+			// 	document.write("今天是星期六");
+			default:
+				weekstr="六";
+		}
+		document.write("今天是星期"+weekstr);
+	</script>
+</body>
+</html>

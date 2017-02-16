@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>split</title>
+</head>
+<body>
+	<script>
+		var str="welcome-to-Beijing";
+		var arr=str.split("-");
+		var date='2017/02/16';
+		var dateArr=date.split("/");
+		console.log(arr); //["welcome","to","Beijing"]
+		console.log(dateArr);
+
+
+		//替换
+		var tel='010-62982178,400-100-9098,010-86773542';
+		var newTel=tel.replace(',',"  ");
+		console.log(newTel); //只替换第一个
+	</script>
+</body>
+</html>

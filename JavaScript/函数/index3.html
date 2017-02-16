@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>求任意一组数的平均值</title>
+</head>
+<body>
+	<script>
+		function getAvg() {
+			var sum = 0,len = arguments.length,i;
+			for(i=0;i<len;i++){
+				sum+=arguments[i];
+			}
+			return sum/len;
+		}
+		var avg = getAvg(334,66,6,8,54);
+		console.log(avg);
+	</script>
+</body>
+</html>

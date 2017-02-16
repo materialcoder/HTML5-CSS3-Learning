@@ -1,0 +1,13 @@
+函数声明：
+function functionName([arg0,arg1,...,argn]) {
+	satements;
+}
+
+函数调用：functionName([arg0,arg1,...,argn]);
+
+函数的返回值 return
+说明：1、函数在赤星完return语句后停止并立即退出
+2、return语句也可以不带有任何返回值，用于提前停止函数执行又不需要返回值的情况
+
+函数中的参数 arguments
+1、arguments对象与数组类似，但不是Array的实例

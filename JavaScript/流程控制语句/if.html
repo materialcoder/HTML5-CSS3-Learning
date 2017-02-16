@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>if语句</title>
+</head>
+<body>
+	<script>
+		/*var age = 15;
+		if(age<18) {
+			alert("未成年");
+		}*/
+
+		var age = prompt("请输入您的年龄");
+		/*if(age<18) {
+			alert("您还没有成年");
+		} else {
+			alert("您已成年，请提供您的身份证号");
+		}*/
+
+		if(age<18) {
+			alert("您还没有成年");
+		} else if(age>=18 && age<=59) {
+			alert("您可以进入");
+		} else {
+			alert("您已超出年龄限制");
+		}
+	</script>
+</body>
+</html>

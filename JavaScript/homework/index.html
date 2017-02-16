@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计算日期</title>
+</head>
+<body>
+	<script>
+		function findDays(){
+			var y=parseInt(prompt("请输入您的出生年份")),
+				m=parseInt(prompt("请输入您的出生月份")),
+				d,days;
+				
+			if(m>12 || m<1) {
+				alert("请输入正确的月份");
+				return;
+			}
+
+			d=parseInt(prompt("请输入您的出生日期"));
+			if(d>31 || d<1) {
+				alert("请输入正确的日期");
+				return;
+			}
+			
+			switch(m){
+				case 1:
+					days=d;
+					break;
+				case 2:
+					days=31+d;
+					break;
+				case 3:
+					days=59+d;
+					break;
+				case 4:
+					days=90+d;
+					break;
+				case 5:
+					days=120+d;
+					break;
+				case 6:
+					days=151+d;
+					break;
+				case 7:
+					days=181+d;
+					break;
+				case 8:
+					days=212+d;
+					break;
+				case 9:
+					days=243+d;
+					break;
+				case 10:
+					days=273+d;
+					break;
+				case 11:
+					days=304+d;
+					break;
+				case 12:
+					days=334+d;
+					break;
+			}
+
+			if(y%4==0 && m>2) {
+				days=days+1;
+			}
+			document.write("您的生日在"+y+"年是第"+days+"天");
+		}
+
+		findDays();
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>slice、substring、substr</title>
+</head>
+<body>
+	<script>
+		var str="hello world";
+		console.log(str.slice(7,9)); //or
+		console.log(str.slice(-7,5)); //o
+		console.log(str.substring(1,4)); //ell
+		console.log(str.substring(-7,5)); //hello 
+		console.log(str.substring(-4,-7)); //空
+		console.log(str.substring(2,-5)); //he
+
+		console.log(str.substr(6,3)); //wor
+		console.log(str.substr(-5,4)); //worl
+		console.log(str.substr(6,-3)); //空
+	</script>
+</body>
+</html>
