@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>50天后是星期几</title>
+</head>
+<body>
+	<script>
+		var today=new Date();
+		//第一种方法
+		/*today.setDate(today.getDate()+50);
+		console.log(today.getDay());*/
+
+		//第二种方法
+		var weeks=['日','一','二','三','四','五','六'];
+		var year=today.getFullYear();
+		var month=today.getMonth();
+		var day=today.getDate();
+		//创建一个目标日期对象,年月日时分秒
+		var temp=new Date(year,month,day+50);
+		console.log("50天后是："+temp.getFullYear()+'-'+(temp.getMonth()+1)+'-'+temp.getDate()+'-'+'星期'+weeks[temp.getDay()]);
+	</script>
+</body>
+</html>

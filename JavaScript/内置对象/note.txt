@@ -173,3 +173,29 @@ Math.round()
 向四舍五入
 Math.abs(num)
 返回num的绝对值
+
+Math.random()
+返回大于等于0小于1的随机数
+求n到m之间的随机整数的公式：
+random=Math.floor(Math.random()*(m-n+1)+n);
+
+
+4、date
+new Date() 创建一个日期时间对象
+getFullYear() 返回4位数的年份
+getMonth() 返回日期中的月份，返回值为0-11
+getDate() 返回月份中的天数
+getDay() 返回星期，返回值为0-6(0--星期天)
+getHours() 返回小时
+getMinutes() 返回分
+getSeconds() 返回秒
+getTime() 返回表示日期的毫秒数
+
+setFullYear() 设置4位数的年份
+setMonth() 设置日期中的月份，设置值为0-11
+setDate() 设置月份中的天数
+setDay() 设置星期，设置值为0-6
+setHours() 设置小时
+setMinutes() 设置分
+setSeconds() 设置秒
+setTime() 以毫秒数设置日期，会改变整个日期
