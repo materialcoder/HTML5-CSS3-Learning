@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>setInterval</title>
+</head>
+<body>
+	<script>
+		/*var intervalId=setInterval(function() {
+			console.log("hello");
+		},1000);
+
+		//10s之后停止打印
+		setTimeout(function() {
+			clearInterval(intervalId);
+		},10000);*/
+
+		var num=0,
+			max=10,
+			timer=null;
+		//每隔1s num递增一次，知道num的值等于max清除
+		/*timer = setInterval(function() {
+			num++;
+			if(num>=max){
+				clearInterval(timer);
+			}
+			console.log(num);
+		},1000);*/
+
+		//使用超时调用实现
+		function increamentNum() {
+			console.log(num);
+			num++;
+			if(num<=max) {
+				setTimeout(increamentNum,1000);
+			} else {
+				clearTimeout(timer);
+			}
+		}
+		timer=setTimeout(increamentNum,1000);
+	</script>
+</body>
+</html>

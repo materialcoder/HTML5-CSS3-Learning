@@ -1,0 +1,33 @@
+DOM(document object moddel)-文本对象模型
+
+
+查找元素
+document.getElementById();
+document.getElementsByTagName();
+
+设置元素样式
+ele.style.styleName=styleValue
+styleName 不能使用"-"连字符形式 font-size  要使用驼峰命名形式 fontSize
+
+innerHTML
+ele.innerHTML
+功能：返回ele元素开始和结束标签之间的文本和HTML
+ele.innerHTML="html"
+功能：设置ele元素开始和结束标签之间的HTML内容为html
+
+className
+ele.className
+返回ele元素的classNam
+ele.className="classname";
+给元素ele设置一个class为classname(重新设置类，替换元素本身的class)
+
+
+ele.getAttribute("attribute")
+功能：获取ele元素的attribute属性
+
+ele.setAttribute("attribute",value)
+功能：在ele元素上设置属性
+--value是字符串时需要加引号
+
+ele.removeAttribute("attribute")
+功能：删除ele上的attribute属性

@@ -1,0 +1,33 @@
+HTML事件：直接在HTML元素标签内添加事件，执行脚本 （不推荐使用）
+<tag 事件="执行脚本"></tag>
+
+DOM0级事件
+ele.事件=执行脚本
+
+鼠标事件：
+onload：页面加载时触发
+onclick：鼠标点击时触发
+onmouseover：鼠标滑过时触发
+onmouseout：鼠标离开时触发
+onfocus：获得焦点时触发(只能用于input的type为text和password，textaera)
+onblur：失去焦点时触发
+onchange：域的内容改变时触发,一般所用于select或checkbox或radio
+onsubmit：表单中的确认按钮被点击时发生，（不是加在按钮上，二是在表单上）
+onmousedown：鼠标按钮在元素上按下时触发
+onmousemove：在元素上松开鼠标按钮时触发
+onresize：当调整浏览器窗口的大小时触发
+onscroll：拖动滚动条滚动时触发
+
+
+
+键盘事件与keyCode属性
+onkeydown：在用户按下一个键盘按键时发生
+onkeypress：在键盘按键被按下并释放一个键时发生
+onkeyup：在键盘按键被松开时发生
+keyCode：返回按键的值的字符代码或键的代码
+
+
+
+关于this指向：
+在事件触发的函数中，this是对该DOM对象的引用
+

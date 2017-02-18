@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>getElementBy-</title>
+</head>
+<body>
+	<div class="box" id="box">元素</div>
+	<ul id="list1">
+		<li>前端开发</li>
+		<li>服务器开发</li>
+		<li>UI设计</li>
+		<li>UI设计</li>
+	</ul>
+	<ol id="list2">
+		<li>1</li>
+		<li>2</li>
+	</ol>
+	<script>
+		var box=document.getElementById('box');
+		box.style.color="#f00";
+		box.style.fontWeight="bold";
+
+		//获取页面中所欲的li
+		var lis=document.getElementsByTagName('li'); //array
+		console.log(lis.length); //5
+
+		//获取id为list1下的所有的li
+		var lis2=document.getElementById('list1').getElementsByTagName('li');
+		//console.log(lis2.length); //3
+		for(var i=0;i<lis2.length;i++){
+			lis2[i].style.color="#00f";
+			if(i==0){
+				lis2[i].style.backgroundColor="#ccc";
+			}else if(i==1){
+				lis2[i].style.backgroundColor="#ff0";
+			}else if(i==2){
+				lis2[i].style.backgroundColor="#0f0";
+			} else {
+				lis2[i].style.backgroundColor="#333";
+			}
+		}
+
+	</script>
+</body>
+</html>

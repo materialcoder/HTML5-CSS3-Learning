@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM属性设置与获取</title>
+</head>
+<body>
+	<p id="text" class="text" align="center" data-type="title">文本</p>
+	<input type="text" name="user" value="user" id="user" validate="true">
+	<script>
+		var p=document.getElementById('text');
+		var user=document.getElementById('user');
+		console.log(p.id); //只能得到元素本身带有的属性，对于自定义的属性无法获取
+		console.log(p.class); //undefined
+		console.log(p.getAttribute("data-type"));
+		console.log(p.getAttribute("class"));  //p.className
+		console.log(user.name);
+		console.log(user.validate); //undefined
+		console.log(user.getAttribute("validate")); //true
+
+		//设置属性
+		p.setAttribute("data-color","red");
+		user.setAttribute("isRead","false");
+
+		//删除p上的align属性
+		p.removeAttribute("align");
+	</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>拖动</title>
+	<style>
+		body {
+			height: 2000px;
+		}
+		.box{
+			width: 200px;
+			height: 200px;
+			background: #f00;
+		}
+	</style>
+</head>
+<body>
+	<div class="box" id="box">拖动</div>
+	<script>
+		var box=document.getElementById('box');
+		//绑定按下事件
+		box.onmousedown=function() {
+			console.log("1");
+		}
+		//绑定移动事件
+		box.onmousemove=function() {
+			console.log("2");
+		}
+		//绑定松开事件
+		box.onmouseup=function() {
+			console.log("3");
+		}
+		//绑定点击的事件
+		box.onclick=function() {
+			console.log("4");
+		}
+
+		//浏览器窗口尺寸发生改变时
+		window.onresize=function() {
+			console.log("5");
+		}
+		//拖动滚动条
+		window.onscroll=function() {
+			console.log("6");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>setTimeout</title>
+</head>
+<body>
+	<script>
+		var fnCall=function() {
+			alert("world");
+		}
+
+		var timeout1=setTimeout(function(){
+			alert("hello");
+		},2000);
+		//取消超时调用
+		clearTimeout(timeout1);
+
+		setTimeout(fnCall,3000);
+	</script>
+</body>
+</html>

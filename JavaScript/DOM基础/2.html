@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>innerHTML</title>
+	<style>
+		.on {
+			border: 1px solid #0f0;
+		}
+		.current { background: #ccc; color: #f00; }
+	</style>
+</head>
+<body>
+	<div class="box" id="box">box</div>
+	<ul class="list" id="list">
+		<li><i>1</i></li>
+		<li class="on">2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+	<script>
+		var lis=document.getElementById('list').getElementsByTagName('li');
+		for(var i=0,len=lis.length;i<len;i++){
+			console.log(lis[i].innerHTML);
+			lis[i].innerHTML+='程序';
+			lis[1].className="current";
+		}
+		console.log(document.getElementById('box').className);
+	</script>
+</body>
+</html>
