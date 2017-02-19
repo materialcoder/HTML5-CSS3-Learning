@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>navigator</title>
+</head>
+<body>
+	<script>
+		// var explore=navigator.userAgent;
+		// alert(explore);
+
+		//检测浏览器类型
+		function getBroswer() {
+			//获取userAgent属性
+			var explore=navigator.userAgent.toLowerCase(),broswer;
+			if(explore.indexOf("msie")>-1) {
+				broswer = "IE";
+			} else if(explore.indexOf("chrome")>-1) {
+				broswer = "Chrome";
+			} else if(explore.indexOf("opera")>-1) {
+				broswer = "Opera";
+			} else if(explore.indexOf("safari")>-1) {
+				broswer = "Safari";
+			}
+			return broswer;
+		}
+		var explore = getBroswer();
+		console.log("您当前使用的是"+explore+"浏览器");
+	</script>
+</body>
+</html>
