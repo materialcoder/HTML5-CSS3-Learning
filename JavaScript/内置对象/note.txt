@@ -68,7 +68,7 @@ arrayObject.splice(index,count)
 arrayObject.splice(index,0,item1,...,itemX)
 功能：在指定位置插入值
 参数：index：起始位置
-	  0：要删除的橡树
+	  0：要删除的项数
 	  item：要插入的项
 返回值：数组
 
