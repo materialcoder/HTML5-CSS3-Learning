@@ -7,13 +7,13 @@ ul { list-style: none; }
 .container { overflow: hidden; width: 1200px; height: 500px; margin: 50px auto; border: 1px solid #ccc; border-radius: 6px 6px 0 0; }
 .tab { width: 1200px; height: 50px; }
 .tab > ul > li { font-size: 22px; line-height: 50px; float: left; width: 300px; height: 50px; cursor: pointer; text-align: center; color: #666; }
-.tab > ul > li.active { border-radius: 6px; background: #fc0; }
+.tab > ul > li.active { border-radius: 6px; background: #fc0; font-weight: bold; }
 
 /* 轮播图片 */
 .banner { position: relative; overflow: hidden; width: 100%; height: 460px; }
 .banner-slide { position: absolute; top: 0; left: 0; display: none; width: 1200px; height: 460px; background-repeat: no-repeat; }
+.banner-slide-active { display: block; }
 .slide1 { background-image: url(../img/1.jpg); }
 .slide2 { background-image: url(../img/3.jpg); }
 .slide3 { background-image: url(../img/4.jpg); }
 .slide4 { background-image: url(../img/5.jpg); }
-.banner-slide-active { display: block; }
