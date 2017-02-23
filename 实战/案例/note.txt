@@ -1,0 +1,5 @@
+块元素水平居中：
+1、margin:0 auto;
+2、负边距居中 width:100px;left:50%;margin-left:-50px;
+
+背景图覆盖模式：background-size:cover;
